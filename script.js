@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const formData = new FormData(form); // Получаем данные формы
 
         const xhr = new XMLHttpRequest();
-        xhr.open("POST", "http://localhost:5000/submit", true); // Указываем адрес сервера Flask
+        xhr.open("POST", "http://localhost:8080/submit", true); // Указываем адрес сервера Flask
 
         xhr.onreadystatechange = function () {
             if (xhr.readyState === 4) {
